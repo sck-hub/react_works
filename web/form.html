@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 예제</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <!-- 검색 -->
+     <form action="search.jsp" method="get">
+        <!-- post : 로그인/회원가입(보안) , get : 화면을 보여줄 때 -->
+        <input type="text" name="query" placeholder="검색어를 입력하세요">
+        <!-- <input type="submit" value="검색"> -->
+         <button type="submit">검색</button>
+        <ol>
+            <li>회사소개</li>
+            <li>제품소개</li>
+            <li>기술소개</li>
+        </ol>            
+     </form>
+
+     <!-- 로그인 -->
+      <h3 style="margin-left: 100px;">---로그인---</h3>
+      <form action="login.jsp" method="post" id="loginform">
+        <ul>
+            <li>
+                <label for="userid">ID : </label>
+                <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요">
+            </li>
+            <li>
+                <label for="userpw">PW : </label>
+                <input type="password" name="userpw" id="userpw">
+            </li>
+            <li>
+                <button type="submit">로그인</button>
+            </li>
+
+        </ul>     
+
+      </form>
+
+      <!-- 버튼 태그 : js 연결 -->
+       <div>
+        <!-- onClick : js의 이벤트 속성 // onChange : 선택하면 변경됨 -->
+            <button type="submit" onclick="alert('안녕하세요')">확인</button>
+       </div>
+
+    
+</body>
+</html>

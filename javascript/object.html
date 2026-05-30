@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 정의와 사용</title>
+</head>
+<body>
+    <h2>객체</h2>
+
+    <script>
+        // 객체 정의
+        let person = {
+            name: "이정후",
+            age: 27,
+            play: function() {
+                // return this.name + "님이 야구를 합니다."        // * this : 이 안(person 객체)의 소속이다
+                // 템플릿 리터럴 표기 : ${}안에 변수와 표현식을 넣음
+                return `${this.name}가 야구를 합니다.`;     // `` : +를 안 써도 됨 (앞에 $를 써야함)
+            }
+        }
+
+        console.log(person);
+        console.log(typeof(person));    //object
+        
+        console.log("이름:",person.name,", 나이:",person.age);
+
+        console.log("활동:",person.play());
+        
+        // 함수 출력은 person.play() play뒤에 괄호를 붙인다
+        
+        
+    </script>
+    
+</body>
+</html>

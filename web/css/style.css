@@ -1,0 +1,29 @@
+/* 전체 영역 크기 */
+.container {
+    width: 800px;
+    /* 
+        margin:바깥 여백 설정
+        상하 여백x(0px), 좌우 자동 여백 설정
+    */
+    margin: 0 auto;
+}
+
+h2 {
+            color: #ff0000;
+        }
+        p {
+            /* 줄 간격 */
+            line-height: 2;
+            font-family: 바탕체;
+        }
+        /* 선택자 (id : #, class : .) */
+        #p1 {
+            background-color: lightgreen;
+        }
+        #p2 {
+            background-color: yellow;
+        }
+        .accent {
+            color: #ff0000;
+            font-weight: bold;
+        }

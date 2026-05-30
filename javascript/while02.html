@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 무한 반복문 break 사용
+        // let i = 1;
+        // while (true) {
+        //     console.log(i);
+
+        //     i++;
+        //     if (i > 5) {
+        //         break;   
+        //     }
+        // }
+
+     // 키보드 입력
+    while(true) {
+        // prompt("데이터", 힌트)
+        let key = prompt("계속할까요?", 'y/n');
+        // 키가 소문자y 또는 대문자Y일 경우
+        if (key == 'y' || key == 'Y') {
+            alert('반복합니다.');
+            
+        } else if (key == 'n' || key == 'N') {
+            alert('중단합니다.');
+            // break 반복 중단
+            break;
+        } else {
+            alert('잘못된 입력입니다.');
+        }
+    }       
+    console.log("프로그램 종료");
+    
+    </script>
+
+
+    
+</body>
+</html>

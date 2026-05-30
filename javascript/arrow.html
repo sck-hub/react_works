@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화살표 함수</title>
+</head>
+<body>
+    <script>
+        // 3의 배수 만드는 함수 (이름이 있는 함수)
+        function times3(x) {
+            return 3 * x ;
+            
+        }
+
+        // 4의 배수 (이름이 없는 함수)  : 함수를 변수에 할당
+        // let times4 = function(x) {
+        //     return 4 * x ;
+        // }
+
+        // 4의 배수를 화살표 함수로 만들기 , 
+        // 매개변수(x) 입력 -> 화살표(=>) 입력 -> 중괄호
+        let times4 = (x) => { 
+            return 4 * x;
+        }
+
+        // 두 수의 합을 계산하는 함수
+        let total = (x, y) => {
+            return x + y;
+        }
+
+        // 응원 문자열을 출력하는 함수
+        let message = () => {
+            return "Good Luck!";
+        }
+
+        console.log(times3(10));     // 호출 : 30
+        console.log(times4(10));    // 40
+        console.log(total(10,20));
+        console.log(message());
+        
+        
+        
+        
+    </script>
+    
+</body>
+</html>

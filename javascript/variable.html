@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수와 자료형</title>
+</head>
+<body>
+    <h2>변수와 자료형</h2>
+    
+    <script>
+        // 변수 선언 : 자료형 표기는 var, let을 사용
+        var name = "Alice";     // 문자
+        var age = 30;           // 숫자
+        let isStudent = false;   // boolean
+        // 출력
+        console.log("Name : " , name);
+        console.log("Age : " , age);
+        console.log("Is Student?", isStudent);   // false값 : 학생이 아니다
+
+        // 호이스팅 : 끌어 올리다
+        console.log(x);     // undefined : 할당(=값을 저장)x
+        var x = 5;
+
+        // let은 호이스팅x
+        // console.log(y);
+        // let y = 10;        // error
+        
+        // 상수(constant variable) 선언     : 리액트는 const를 많이 씀
+        const z = 20;
+        // z = 50;     // 상수는 재할당x
+
+
+    </script>
+    
+</body>
+</html>

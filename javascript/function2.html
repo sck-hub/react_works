@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반환값이 있는 함수</title>
+</head>
+<body>
+    <h2>Function - return</h2>
+
+    <div id="demo"></div>
+    <button onclick="message()">확인</button>
+
+    <script>
+        // 메시지 출력
+        // demo 태그를 선택자로 div태그 선택
+        let demo = document.getElementById("demo")
+
+        function message() {
+            return demo.innerHTML = "<h1>Good Luck</h1>"
+            
+        }
+
+        //호출
+        // console.log(message());         // 함수라서 괄호 ( message() )넣어야함
+        
+    </script>
+    
+</body>
+</html>

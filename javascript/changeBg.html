@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경색 변경하기</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 메뉴 버튼 생성 -->
+     <div class="menu">
+        <ul>
+            <li>
+                <a href="#" onclick="changeBg('green')">Green</a>
+            </li>
+            <li>
+                <a href="#" onclick="changeBg('black')">Black</a>
+            </li>
+            <li>
+                <a href="#" onclick="changeBg('pink')">Pink</a>
+            </li>
+        </ul>
+     </div>
+     <!-- 배경색 넣을 사각형-->
+      <div id="rect" class="box">
+        
+      </div>
+
+      <script>
+        // DOM을 조작
+        // 매개변수가 color인 함수
+        function changeBg(color) {
+            // 사각형 선택
+            let rect = document.getElementById("rect");
+            // 배경 색상 변경
+            rect.style.backgroundColor = color;
+
+        }
+      </script>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+</head>
+<body>
+
+    <script>
+        console.log(10 == 10);      // true :boolean형
+        console.log(10 == '10');    // true (숫자 == 문자)
+        console.log(10 === '10');   // false (숫자 == 문자) : 숫자인 경우 =를 3개를 써야한다!
+        console.log(10 !== '10');   // true (숫자 == 문자) : 반대인 경우
+
+        // 논리 연산자 : && (and), || (or), ! (not)
+        let a = 12;
+        let b = 22;
+
+        console.log(a < b && a === 11);     // false
+        console.log(a < b || a !== 12);     // true : 둘 중에 하나만 참
+        console.log(!(a>b));                // true
+
+        // 삼항(조건)연산자 - (조건식) ? '참' : '거짓'      // if문 ? else문
+        // 변수 선언
+        let num = 7;
+        let result;
+
+        result = (num%2 === 0) ? "짝수" : "홀수";
+        console.log(result);
+        // 달러 사용할 때 ` ` 를 사용, 백틱안에 변수값 입력
+        console.log(`결과: ${result}`);
+        
+        
+
+
+        
+        
+        
+                
+        
+        
+
+    </script>
+    
+</body>
+</html>
