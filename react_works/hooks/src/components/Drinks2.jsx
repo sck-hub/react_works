@@ -7,13 +7,19 @@ const Drinks2 = () => {
     const [inputValue, setInputValue] = useState('');
     // 입력 값 변경 함수    inputValue가 출력, 들어가면 setInputValue 값이 들어감
     const inputValueChange = (e) => {
-        setInputValue(e.target.value);
+        console.log(e.target.value);
+        
+        setInputValue(e.target.value);      
 
     }
     // 음료 추가 핸들러
     // 입력된 값(inputValue)을 newDrink에 저장
     const addDrink = () => {
         const newDrink = inputValue;
+        if(newDrink == '') {
+            alert('음료를 입력하세요');
+            return;
+        }
         setDrinks([...drinks, newDrink]);
         // 입력값 초기화
         setInputValue('');
