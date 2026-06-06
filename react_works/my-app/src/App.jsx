@@ -1,4 +1,6 @@
 import './App.css'
+import Box from './children/Box'
+import Profile from './children/Profile'
 import Dog from './components/Dog'
 import Dog2 from './components/Dog2'
 import Example01 from './components/Example01'
@@ -46,14 +48,19 @@ function App() {    // 함수형태
         {/* <h3>현재 계절: {season}</h3> */}
         {/* <img src={heroImg} alt='메인 이미지' width={300} /> */}
         {/* props(속성) 연습 */}
-        <Dog
+        {/* <Dog
           breed = "말티즈"  // 문자
           age = {2}   // 숫자 : 중괄호있어야함
-        />
-        <Dog2 
+        /> */}
+        {/* <Dog2 
           breed = "진돗개"  // 문자
           age = {5}   // 숫자 : 중괄호있어야함
-        />
+        /> */}
+        {/* <Box>
+          <h3>박스 안의 내용</h3>
+          <p>이것은 Box 컴포넌트 안에 있는 내용입니다</p>
+        </Box> */}
+        <Profile />
 
       </section>
 

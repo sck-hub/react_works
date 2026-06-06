@@ -1,0 +1,22 @@
+.app {
+  margin: 20px;
+
+}
+
+.app ul li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  margin: 10px;
+}
+
+.completed {
+  /* 취소선 */
+  text-decoration: line-through; 
+  color: #ccc;
+}

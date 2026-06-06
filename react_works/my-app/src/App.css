@@ -12,3 +12,17 @@ ul li {
 button {
   margin: 5px;
 }
+/* img 태그는 속성이 inline(가로)태그이므로 block(수직)으로 바꿔준다 */
+.avatar {
+  display: block;   /* 수직 */
+  border-radius: 5px;
+  margin-bottom: -5px;
+}
+
+.card {
+  border: 3px solid #06cccc;
+  max-width: 400px;       /* 최대 400px까지 */
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px auto;      /* 가운데 배치 */
+}

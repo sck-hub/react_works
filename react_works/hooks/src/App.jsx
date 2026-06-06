@@ -7,6 +7,11 @@ import Counter from './components/Counter'
 import Car from './components/Car'
 import Drinks from './components/Drinks'
 import Drinks2 from './components/Drinks2'
+import UserList from './components/userList'
+import UseEffectex from './hook/UseEffectex'
+import Like from './hook/Like'
+import InputValue from './hook/InputValue'
+import SignIn from './hook/SignIn'
 
 function App() {
 
@@ -17,7 +22,12 @@ function App() {
         {/* <Counter /> */}
         {/* <Car /> */}
         {/* <Drinks /> */}
-        <Drinks2 />
+        {/* <Drinks2 /> */}
+        {/* <UserList /> */}
+        {/* <UseEffectex /> */}
+        {/* <Like /> */}
+        {/* <InputValue /> */}
+        <SignIn />
       </section>
     </>
   )
