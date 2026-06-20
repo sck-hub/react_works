@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 변수 정의와 사용</title>
+    <style>
+        /* css 변수 정의 */
+        :root {
+            /* 글자색 정의 */
+            --red-color: rgb(175, 5, 5);
+            /* 배경색 정의 */
+            --green-color: rgb(5, 200, 5);
+            /* 여백 1rem=16px */
+            --my-2: 0.5rem;
+            --my-3: 1rem;
+
+
+        }
+        h2 {
+            /* color: red; */
+            /* var() : 'css 변수' 의 값을 다른 속성의 값으로 지정할 때 사용 */
+            color: var(--red-color);
+        }
+        div {
+            width: 80px;
+            height: 80px;
+            background-color: var(--green-color);
+            /* background-color: green; */
+            /* margin: 16px; */
+            margin: var(--my-3);
+            /* 가로배치 */
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h2>스타일 변수</h2>
+    <div></div>
+    <div></div>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 예제</title>
+    <style>
+        .container {
+            /* display: flex은 gap을 씀 */
+            display: flex;
+            /* item을 가로, 세로 방향으로 배치 */
+            flex-direction: row;        /* 가로 */
+            flex-direction: column;     /* 세로 */
+            gap: 15px;                  /* 간격 
+            */
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- 부모 -->
+    <div class="container">
+        <!-- 자식 -->
+        <div class="box">
+        </div>
+        <div class="box">
+        </div>
+        <div class="box">
+        </div>
+    </div>
+    
+</body>
+</html>

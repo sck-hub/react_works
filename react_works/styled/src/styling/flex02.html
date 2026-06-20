@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 예제</title>
+    <style>
+        .container {
+            display: flex;
+            /* 주축(main-axis)의 정렬 방법을 지전 */
+            justify-content: center;    /* 가로 방향으로 중앙 정렬 */
+            justify-content: flex-start;/* 가로 방향으로 시작 위치에 정렬 */
+            justify-content: space-between; /* 가로 방향으로 양 끝에 정렬 */
+            justify-content: space-around;  /* 가로 방향으로 고르게 분배*/
+            gap: 15px;                 
+            */
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 부모 -->
+    <div class="container">
+        <!-- 자식 -->
+        <div class="box">
+        </div>
+        <div class="box">
+        </div>
+        <div class="box">
+        </div>
+        <div class="box">
+        </div>
+    </div>
+    
+</body>
+</html>

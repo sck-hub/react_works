@@ -16,7 +16,6 @@ const SignIn = () => {
     // 로그인 결과 상태 관리
     const [result, setResult] = useState(null);
 
-
     // 입력 필드 변경 상태 관리
     const handleInputChange = (e) => {
         // e.target.value : 값 / e.target.name : 속성
@@ -77,7 +76,7 @@ const SignIn = () => {
                 <p style={{color:'black'}}>로그인 되었습니다.</p>
             )}
             {result === 'fail' && (
-                <p style={{color:'red'}}>ID,PW가 일치하지 않습니다..</p>
+                <p style={{color:'red'}}>ID, PW가 일치하지 않습니다.</p>
             )}
         </div>
     )

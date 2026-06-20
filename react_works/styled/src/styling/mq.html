@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리 실습</title>
+    <style>
+        /* 브라우저 크기 : 0px ~767px 까지의 배경색을 지정 */
+        /* 스마트폰 크기 */
+        @media screen and (max-width: 767px) {      
+            body {
+                background-color: lightcoral;
+            }
+        }
+        /* 태블릿 크기 */
+        @media screen and (min-width: 768px) {
+            body {
+                background-color: lightblue;
+            }
+            
+        }
+        @media screen and (min-width: 1200px) {
+            body {
+                background-color: lightgreen;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 미디어 쿼리: 접속하는 미디어에 따라 특정한 css 스타일을 사용하는 방식 -->
+     <h2>미디어 쿼리 예제</h2>
+     <p>화면 크기에 따라 배경색이 변경됩니다.</p>
+    
+</body>
+</html>
