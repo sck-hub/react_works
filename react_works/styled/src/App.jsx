@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import ButtonSample from './components/Buttonsample'
 import MainPage from './components/MainPage'
+import Blocks from './components/Blocks'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,8 @@ function App() {
     <>
       <section className="app">
         {/* <ButtonSample /> */}
-        <MainPage />
+        {/* <MainPage /> */}
+        <Blocks />
  
       </section>
 
