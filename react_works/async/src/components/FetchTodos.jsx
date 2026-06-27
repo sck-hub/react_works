@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
+import {Link} from "react-router-dom"
 
 const FetchTodos = () => {
+    // data 상태를 배열로 관리
     const [data, setData] = useState([]);
     // useEffect를 안 쓰면 무한 실행 됨
     useEffect(() => {
@@ -18,7 +20,9 @@ const FetchTodos = () => {
             <h2>할 일 데이터 목록</h2>
             <ul>
                 {data.map((todo) => (
-                    <li key={todo.id}>{todo.title}</li>
+                    <li key={todo.id}>
+                        <Link to={`/${todo.id}`}>{todo.title}</Link>
+                    </li>
                 ))}
 
             </ul>
