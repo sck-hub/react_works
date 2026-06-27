@@ -6,6 +6,9 @@ import Home from './layouts/Home'
 import About from './layouts/About'
 import Board from './layouts/Board'
 import BoardById from './layouts/BoardById'
+import AxiosTodos from './components/AxiosTodos'
+import AxiosTodoByid from './components/AxiosTodoById'
+import AxiosPost from './components/AxiosPost'
 
 function App() {
 
@@ -13,11 +16,17 @@ function App() {
     <>
       <section className="app">
         <BrowserRouter>
-          {/* <Routes>
-            <Route path='/' element={<FetchTodos />}/>
-            <Route path='/:id' element={<FetchTodoById />}/>
-          </Routes> */}
-          <div className='header'>
+          <Routes>
+            {/* axios() 사용 */}
+            <Route path='/axios' element={<AxiosTodos />}/>
+            <Route path='/axios/:id' element={<AxiosTodoByid />} />
+            <Route path='/axios-post' element={<AxiosPost />} />            
+            
+            {/* fetch() 사용 */}
+            {/* <Route path='/' element={<FetchTodos />}/>
+            <Route path='/:id' element={<FetchTodoById />}/> */}
+          </Routes>
+          {/* <div className='header'>
             <Link to="/">Home</Link>&nbsp;
             <Link to="/about">About</Link>&nbsp;
             <Link to="/board">Board</Link>
@@ -27,8 +36,8 @@ function App() {
             <Route path ='/about' element={<About />} />
             <Route path ='/board' element={<Board />} />
             <Route path ='/board/:id' element={<BoardById />} />
-          </Routes>
-        </BrowserRouter>       
+          </Routes> */}
+        </BrowserRouter>
  
       </section>
 
